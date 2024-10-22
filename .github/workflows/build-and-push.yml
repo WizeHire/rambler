@@ -36,6 +36,9 @@ jobs:
           # list of Docker images to use as base name for tags
           images: |
             ${{steps.login-ecr.outputs.registry}}/rambler
+          # Skip the latest tag, it's immutable
+          flavor: |
+            latest=false
           # generate Docker tags based on the following events/attributes
           tags: |
             type=semver,pattern={{major}}.{{minor}}.{{patch}}
