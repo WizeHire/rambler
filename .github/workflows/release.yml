@@ -1,4 +1,4 @@
-name: release-dev
+name: release
 
 on:
   push:
@@ -10,3 +10,7 @@ jobs:
     uses: ./.github/workflows/build-and-push.yml
     with:
       ecr-role: arn:aws:iam::542218630570:role/git-ops-ecr
+  release-prod:
+    uses: ./.github/workflows/build-and-push.yml
+    with:
+      ecr-role: arn:aws:iam::757190845455:role/git-ops-ecr
