@@ -7,6 +7,6 @@ on:
 
 jobs:
   release-prod:
-    uses: ./.github/workfows/build-and-push.yml
+    uses: ./.github/workflows/build-and-push.yml
     with:
       ecr-role: arn:aws:iam::757190845455:role/git-ops-ecr
