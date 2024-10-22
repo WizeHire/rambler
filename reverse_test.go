@@ -2,12 +2,12 @@ package main
 
 import (
 	"errors"
-	"io/ioutil"
+	"io"
 	"reflect"
 	"strings"
 	"testing"
 
-	"github.com/custompro98/rambler/log"
+	"github.com/wizehire/rambler/log"
 )
 
 func TestReverse(t *testing.T) {
@@ -179,7 +179,7 @@ func TestReverse(t *testing.T) {
 		}
 
 		logger = log.NewLogger(func(l *log.Logger) {
-			l.Output = ioutil.Discard
+			l.Output = io.Discard
 		})
 
 		err := reverse(service, c.all, c.save, c.migration, logger)

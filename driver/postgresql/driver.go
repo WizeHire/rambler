@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/custompro98/rambler/driver"
+	"github.com/wizehire/rambler/driver"
 	_ "github.com/lib/pq" // Working with the lib/pq PostgreSQL driver here.
 )
 

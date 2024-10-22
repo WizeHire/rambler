@@ -13,7 +13,7 @@ Go users can also simply compile it from source and install it as a go
 executable using the following command :
 
 ```
-go install github.com/custompro98/rambler
+go install github.com/wizehire/rambler
 ```
 
 Releases are compiled using the wonderful

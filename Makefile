@@ -1,5 +1,5 @@
 targets="darwin/arm64,darwin/amd64,darwin/386,linux/arm64,linux/amd64,linux/386"
-pkg="github.com/custompro98/rambler"
+pkg="github.com/wizehire/rambler"
 version=$(shell git describe --tags)
 ldflags="-X main.VERSION=${version}"
 
@@ -25,4 +25,4 @@ test: ## Test the project
 
 .PHONY: push
 push: ## Push image to docker
-	docker buildx build --push --platform linux/arm64,linux/amd64 -t custompro98/rambler:$(version) -t custompro98/rambler:latest .
+	docker buildx build --push --platform linux/arm64,linux/amd64 -t wizehire/rambler:$(version) -t wizehire/rambler:latest .

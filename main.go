@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/custompro98/rambler/log"
+	"github.com/wizehire/rambler/log"
 	"github.com/urfave/cli"
 )
 

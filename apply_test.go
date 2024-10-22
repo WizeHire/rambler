@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/custompro98/rambler/log"
+	"github.com/wizehire/rambler/log"
 )
 
 func TestApply(t *testing.T) {

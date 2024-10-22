@@ -1,4 +1,4 @@
-module github.com/custompro98/rambler
+module github.com/wizehire/rambler
 
 go 1.23
 
