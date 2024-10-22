@@ -1,0 +1,12 @@
+name: release-dev
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  release-dev:
+    uses: ./.github/workfows/build-and-push.yml
+    with:
+      ecr-role: arn:aws:iam::542218630570:role/git-ops-ecr

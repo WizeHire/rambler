@@ -4,21 +4,19 @@
 
 A simple and language-independent SQL schema migration tool
 
-## Installation
+## Building
 
-You can download the latest release on the [release
-page](https://github.com/elwinar/rambler/releases) of the project.
+## Automatic
 
-Go users can also simply compile it from source and install it as a go
-executable using the following command :
+Push a tag in the form `vMAJOR.MINOR.PATCH` and watch the actions take over.
+
+### Manual
+
+Requires to be logged into the AWS account containing the ECR repository.
 
 ```
-go install github.com/wizehire/rambler
+VERSION=x.y.z docker buildx build --push --platform linux/arm64,linux/amd64 -t wizehire/rambler:$VERSION -t wizehire/rambler:latest .
 ```
-
-Releases are compiled using the wonderful
-[XGo](https://github.com/karalabe/xgo). Don't hesitate to check it out, it
-really kicks some serious ass.
 
 ## Usage
 
